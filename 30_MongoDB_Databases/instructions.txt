@@ -1,0 +1,13 @@
+1. Open Git Bash
+2. Type 'mongosh' to start mongoDB shell
+3. 'show dbs' to show all databases
+4. 'use db_name' to create / use a database
+5. 'db.collection_name' to create a collection inside database
+6. 'db.collection_name.insert({key: value})' inserts a key-value dictionary object into the collection
+7. ctrl + c to exit
+
+MongoDB Server Docs:
+https://www.mongodb.com/docs/manual/
+
+MongoDB directory location:
+F:\MongoDB

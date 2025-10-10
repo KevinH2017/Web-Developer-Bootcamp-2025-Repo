@@ -1,0 +1,13 @@
+<!-- References head.ejs html code -->
+<%- include('partials/head') %>
+    <!-- Responsive navbar -->
+    <%- include('partials/navbar') %>
+  <div class="container">
+    <h1>All the Cats</h1>
+    <ul>
+        <% for(let cat of cats) { %>
+            <li><%= cat %></li>
+        <% } %>
+    </ul>
+  </div>
+<%- include('partials/footer') %>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Basics</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" 
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css"> <!--main.css will overwrite any overlapping styles coming from Bootstrap-->
+    <!--Bootstrap website: https://getbootstrap.com/docs/4.5/getting-started/introduction/ -->
+</head>
+<body>
+    <div class="container">
+        <h1 class="display-1 text-center text-primary">Bootstrap Display 1</h1>
+        <h1 class="display-2">Display 2</h1>
+        <h1 class="display-3">Display 3</h1>
+        <h1 class="display-4">Display 4</h1>
+        <h2 class="display-4">Buttons <span class="badge badge-success badge-pill">NEW</span></h2>
+        <h3>Large Button Group</h3>
+        <div class="btn-group-lg">
+            <button type="button" class="btn btn-primary">Primary</button> <!--outline does not fill in the button-->
+            <button type="button" class="btn btn-secondary">Secondary</button>
+            <button type="button" class="btn btn-success" disabled>Success</button> <!--disabled turns off the button, cannot press it-->
+            <button type="button" class="btn btn-info">Info</button>
+        </div>
+        <h3>Button Toolbar</h3>
+        <div class="btn-toolbar">
+            <button type="button" class="btn btn-outline-warning">Warning Outline</button>
+            <button type="button" class="btn btn-outline-danger">Danger Outline</button>
+            <button type="button" class="btn btn-light">Light</button>
+            <button type="button" class="btn btn-outline-dark" disabled>Dark</button>
+        </div>
+        <h3>Small Button Group</h3>
+        <div class="btn-grou-sm">
+            <button type="button" class="btn btn-info-outline btn-lg">Info Outline</button>
+            <button type="button" class="btn btn-secondary btn-sm">Secondary Small</button>
+            <button type="button" class="btn btn-primary">Updates <span class="badge badge-light">9</span></button>
+        </div>
+        <h3>Button Groups</h3>
+        <div class="btn-group">
+            <button class="btn btn-success">One</button>
+            <button class="btn btn-secondary">Two</button>
+            <button class="btn btn-danger">Three</button>
+        </div>
+        <h3>Alerts</h3>
+        <div class="alert alert-danger alert-dissmisible fade show" role="alert">
+            <h3 class="alert-heading">DANGER!</h3>
+            Danger! This is a danger alert!
+            <button aria-label="Close" class="close" data-dismiss="alert">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <h2 class="display-4">Typography</h2>
+        <p class="lead bg-secondary">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, tempore. Reprehenderit consequatur libero illum dignissimos exercitationem rem, 
+        provident, aliquid laudantium possimus molestias dolore velit nostrum, qui voluptas inventore aspernatur quaerat? Lorem ipsum dolor sit, amet consectetur 
+        adipisicing elit. Adipisci aut amet iusto fugiat error eos repellat quos, nihil sequi suscipit dolore hic minima eveniet tenetur expedita unde. Odit, 
+        similique rem? Autem, blanditiis et adipisci accusantium minima dolore quae officia quia dolorum eos quo vitae distinctio ratione voluptatem corrupti 
+        illum animi facere culpa obcaecati minus expedita voluptate doloribus veniam! Voluptate, voluptatibus!
+        </p>
+        <blockquote>
+            <p class="mb-0 bg-success">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere blanditiis nemo accusantium non fugiat fuga odit, dolorem commodi suscipit in reiciendis, 
+            tenetur labore amet autem, vero itaque? Facere, consequuntur praesentium. Delectus blanditiis labore sed maiores quae provident magni voluptates, 
+            obcaecati dolorem accusantium vero inventore eum quisquam saepe. Repellendus inventore, enim reprehenderit vero repellat sit libero harum explicabo 
+            non molestiae voluptatem? Nobis quae dicta non vero adipisci quod ex dolores necessitatibus commodi asperiores, earum exercitationem. Officia dolorem 
+            deserunt quam corporis, iusto maxime sit enim velit quis necessitatibus doloribus fugit perspiciatis ea.
+            </p>
+            <footer class="blockquote-footer">Lorem Ipsum <cite title="Source Title">By Me</cite></footer>
+        </blockquote>
+        <blockquote class="blockquote text-center">
+            <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque magni cum doloremque facilis iusto? Mollitia optio, delectus saepe et ipsam 
+            eaque est repellendus dolor quasi quo. Explicabo dolor reiciendis adipisci! Ut, inventore. Magnam, magni libero nesciunt distinctio harum sunt quidem quia 
+            itaque necessitatibus dolorum culpa non mollitia aperiam aliquam veniam. Consectetur assumenda placeat sapiente dicta dolorem aliquam quasi minus inventore?
+            </p>
+            <footer ckass="blockquote-footer">Someone Famous in <cite title="Source Title">Source Title</cite></footer>
+        </blockquote>
+    </div>
+    <!--These Bootstrap Javascripts are required for everything in the above to work-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" 
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" 
+            integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" 
+            integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+</body>
+</html>

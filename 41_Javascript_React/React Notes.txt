@@ -1,0 +1,9 @@
+- React is a library to help create user interfaces from smaller individual components
+- Components are HTML, CSS, and JS into a single reusable function
+- https://codesandbox.io/signin?continue=/dashboard
+
+CodeSandBox:
+https://codesandbox.io/p/sandbox/test-1-gmygz7?file=%2Fsrc%2FDie.js%3A9%2C1
+
+
+- Use "npm start" to start React server, will use files in same directory as package.json
