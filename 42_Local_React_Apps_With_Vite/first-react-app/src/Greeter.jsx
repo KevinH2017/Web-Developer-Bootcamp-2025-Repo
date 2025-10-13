@@ -1,4 +1,4 @@
-export default function Greeter({ person, from }) {
+export default function Greeter({ person = "everyone", from = "anonymous" }) {
   console.log(person);
   return (
     <>
