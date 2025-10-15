@@ -16,8 +16,9 @@ export default function EmojiClicker() {
     ]);
   };
   const deleteEmoji = (id) => {
-    // Delete emoji with the id
+    // Delete emoji with the specified id
     setEmojis((preEmojis) => {
+      // Creates copy list of emojis and filters for the specified emoji to not be added to the new list of emojis
       return preEmojis.filter((e) => e.id != id);
     });
   };
