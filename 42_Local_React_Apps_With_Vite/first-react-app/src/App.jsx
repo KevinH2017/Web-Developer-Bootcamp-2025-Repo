@@ -12,10 +12,17 @@ import "./App.css";
 // import ColorList from "./ColorList";
 // import PropertyList from "./PropertyList";
 // import ShoppingList from "./ShoppingList";
-import Clicker from "./Clicker";
+// import Clicker from "./Clicker";
 // import Form from "./Form";
+// import Counter from "./Counter";
+// import Toggler from "./Toggler";
+// import TogglerCounter from "./ToggleCounter";
+// import ColorBoard from "./ColorBoard";
+// import ColorSquare from "./ColorSquare";
+// import ColorBox from "./ColorBox";
+import ColorBoxGrid from "./ColorBoxGrid";
 
-// // Sample data for the ShoppingList component
+// Sample data for the ShoppingList component
 // const data = [
 //   { id: 1, item: "egg", quantity: 12, isPurchased: false },
 //   { id: 2, item: "milk", quantity: 1, isPurchased: true },
@@ -23,6 +30,7 @@ import Clicker from "./Clicker";
 //   { id: 4, item: "banana", quantity: 6, isPurchased: true },
 // ];
 
+// Sample data for the PropertyList component
 // const properties = [
 //   { id: 129031, name: "Desert Yurt", rating: 4.9, price: 150 },
 //   { id: 129331, name: "Lone Mountain Cabin", rating: 4.8, price: 250 },
@@ -32,11 +40,26 @@ import Clicker from "./Clicker";
 //   { id: 129035, name: "Gold Miner Campground", rating: 4.69, price: 96 },
 // ];
 
+// List of colors to be used in the ColorBoxGrid component
+const colors = ["red", "orange", "yellow", "green", "blue", "indigo", "violet"];
+
 function App() {
   return (
     <div>
-      <Clicker message="Hello from App" buttonText="Click Me" />
-      <Clicker message="Another message" buttonText="Second Button" />
+      <ColorBoxGrid colors={colors} />
+      {/* <ColorBox colors={colors} /> */}
+
+      {/* <ColorBoard />
+      <ColorSquare
+        color="teal"
+        onClick={() => alert("You clicked the teal square!")}
+      /> */}
+      {/* <ColorBoxes /> */}
+      {/* <TogglerCounter /> */}
+      {/* <Toggler /> */}
+      {/* <Counter /> */}
+      {/* <Clicker message="Hello from App" buttonText="Click Me" />
+      <Clicker message="Another message" buttonText="Second Button" /> */}
       {/* <Form /> */}
       {/* <PropertyList properties={properties} /> */}
       {/* <ShoppingList items={data} /> */}
