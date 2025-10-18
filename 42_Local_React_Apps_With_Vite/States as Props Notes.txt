@@ -9,7 +9,7 @@ Logical
     Has state or related logic; isn't about a specific UI
 
 States / data can be passed downward, they cannot be passed upwards
-Props cannot be passed downward to other components
+Props can only be passed downward to other components
 
 Example:
 App --> LuckyN --> Dice --> Die
