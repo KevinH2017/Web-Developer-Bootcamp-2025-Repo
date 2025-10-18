@@ -1,0 +1,16 @@
+Decoupling Logic From Presentation
+
+Generally, aim to have components to be one of two types:
+
+Presentational
+    Dosen't have state; is primarily about appearance / UI
+
+Logical
+    Has state or related logic; isn't about a specific UI
+
+States / data can be passed downward, they cannot be passed upwards
+Props cannot be passed downward to other components
+
+Example:
+App --> LuckyN --> Dice --> Die
+                    L--> Die
