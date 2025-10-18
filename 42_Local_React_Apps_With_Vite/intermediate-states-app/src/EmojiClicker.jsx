@@ -22,8 +22,16 @@ export default function EmojiClicker() {
       return preEmojis.filter((e) => e.id != id);
     });
   };
+  const allHeartEmoji = () => {
+    // Updates all elements to the same element at once
+    setEmojis((prevEmojis) => {
+      return prevEmojis.map((e) => {
+        return { ...e, emoji: "❤" };
+      });
+    });
+  };
   return (
-    <>
+    <div>
       {emojis.map((e) => (
         <span
           onClick={() => deleteEmoji(e.id)}
@@ -35,6 +43,8 @@ export default function EmojiClicker() {
       ))}
       <br />
       <button onClick={addEmoji}>Add Emoji</button>
-    </>
+      <br />
+      <button onClick={allHeartEmoji}>Make All Emojis Hearts</button>
+    </div>
   );
 }
