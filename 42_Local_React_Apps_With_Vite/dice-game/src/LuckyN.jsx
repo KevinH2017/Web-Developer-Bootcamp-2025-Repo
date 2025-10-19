@@ -1,14 +1,14 @@
 import { useState } from "react";
-import { getRolls, sum } from "./Utils";
+import { getRolls } from "./Utils";
 import Dice from "./Dice";
 import "./Button.css";
 
-export default function LuckyN({ numDice = 2, winCheck = 7 }) {
-  // Creates a state for dice value
+export default function LuckyN({ numDice = 2, winCheck }) {
+  // Creates a state for values of N dice
   const [dice, setDice] = useState(getRolls(numDice));
 
   // Winning dice sum is equal to target
-  const isWinner = sum(dice) === winCheck;
+  const isWinner = winCheck(dice);
 
   // Re-rolls the dice
   const roll = () => {
@@ -17,9 +17,7 @@ export default function LuckyN({ numDice = 2, winCheck = 7 }) {
 
   return (
     <main className="LuckyN">
-      <h1>
-        Lucky{winCheck} {isWinner && "You Win!"}
-      </h1>
+      {<h1>{isWinner && "You Win!"}</h1>}
       <Dice dice={dice} />
       <button onClick={roll} className="Button">
         Re-Roll Dice
