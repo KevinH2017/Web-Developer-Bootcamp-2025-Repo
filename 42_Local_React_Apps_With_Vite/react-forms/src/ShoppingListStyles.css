@@ -1,0 +1,12 @@
+h1 {
+  color: white;
+}
+
+label {
+  color: white;
+}
+
+ul li {
+  /* list-style: none; */
+  text-align: left;
+}
