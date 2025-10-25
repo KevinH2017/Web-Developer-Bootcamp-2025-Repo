@@ -1,4 +1,4 @@
-// Generates an array of integers as dice rolls
+// Generates an array of dice rolls as integers
 
 // Returns random integer: [1..6]
 function d6() {
