@@ -1,0 +1,15 @@
+/* input text color for textfields */
+.input-color {
+  input {
+    color: white;
+  }
+}
+
+/* Centers element */
+.slider-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: auto;
+}
