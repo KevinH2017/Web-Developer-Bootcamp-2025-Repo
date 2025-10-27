@@ -13,7 +13,17 @@ function ProfileViewerWithSearch() {
     function fetchUserOnUsernameChange() {
       async function fetchUser() {
         // Gets username from BASE_URL and github username
-        const userResult = await axios.get(`${BASE_URL}/${username}`);
+        const userResult = await axios
+          .get(`${BASE_URL}/${username}`)
+          .then((response) => console.log(response.data))
+          .catch((error) => {
+            console.error("Axios Error:", error.message);
+            console.error("Request URL:", error.config.url);
+            console.error(
+              "Response Status:",
+              error.response ? error.response.status : "No response"
+            );
+          });
         setProfile({ data: userResult.data, isLoading: false });
       }
       fetchUser();
